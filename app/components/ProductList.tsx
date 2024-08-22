@@ -19,7 +19,11 @@ interface ProductListProps {
 }
 
 const ProductList: React.FC<ProductListProps> = ({ version }) => {
-  console.log("Client Version: " + version);
+  const cookieValueVersion = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith(`${"version"}=`))
+    ?.split("=")[1];
+  console.log("Client Version: " + version, cookieValueVersion);
 
   const products = [
     {
@@ -100,7 +104,7 @@ const ProductList: React.FC<ProductListProps> = ({ version }) => {
     <div className="product-grid">
       {products.map((product) => (
         <div key={product.id} className="product-grid-item">
-          {version === "A" ? (
+          {cookieValueVersion === "A" ? (
             <ProductCardVersionA
               title={product.title}
               price={product.price}

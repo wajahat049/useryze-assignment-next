@@ -6,6 +6,7 @@ import ProductList from "./components/ProductList";
 export default async function HomePage() {
   const cookieStore = cookies();
   const version = cookieStore.get("version")?.value;
+  console.log("HOME", cookieStore.get("version"));
 
   return <ProductList version={version} />;
 }
