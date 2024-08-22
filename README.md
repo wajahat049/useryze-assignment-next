@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Overview
 
 This project demonstrates an A/B testing setup using Next JS, TypeScript and Cookies. The main feature is to show different versions of product cards i.e `Version A` and `Version B` based on user assignment. The version is assigned randomly and can also be controlled via a configuration file, and the assigned version persists.
