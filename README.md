@@ -17,6 +17,11 @@ This project demonstrates an A/B testing setup using Next JS, TypeScript and Coo
 
    - A `config.json` file is used to define a `defaultVersion`. If this value is provided, it is used to set the version for all users.
    - If no `defaultVersion` is provided, the version is assigned randomly (50% chance for either "A" or "B").
+  
+1. **Middleware**:
+
+   - All the process such as checking for default version, assigning random version and setting that version in cookie is done in the `middleware.ts` file.
+   - `middleware.ts` file works on server side.
 
 2. **State Persistence**:
 
