@@ -4,7 +4,7 @@ This project demonstrates an A/B testing setup using Next JS, TypeScript and Coo
 
 ## Features
 
-- **A/B Testing**:  Randomly assigns a user to either Version A or Version B of the product card. This assignment is persisted using `redux-persist`.
+- **A/B Testing**:  Randomly assigns a user to either Version A or Version B of the product card. This assignment is persisted using `cookies`.
 - **Configuration-Based Version Assignment**:  Allows setting a default version via a configuration file (`config.json`).
 - **Product Card Design**:  Two versions of the product card are available:
   - **Version A**:  A basic product card with standard design.
