@@ -61,8 +61,8 @@ This project demonstrates an A/B testing setup using Next JS, TypeScript and Coo
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/wajahat049/useryze-assignment.git
-   cd useryze-assignment
+   git clone https://github.com/wajahat049/useryze-assignment-next.git
+   cd useryze-assignment-next
    ```
 
 2. **Install Dependencies**:
